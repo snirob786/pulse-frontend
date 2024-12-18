@@ -27,7 +27,7 @@ const Index = () => {
     setIsLoading(true);
     try {
       let result = await requestHandler("POST", "auth/login", {
-        username,
+        email: username,
         password,
       });
       console.log("🚀 ~ onFinish ~ result:", result);
